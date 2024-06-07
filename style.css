@@ -1,0 +1,16 @@
+#Clock{
+    font-size: 125px;
+    text-align: center;
+    margin-top: 100px;
+background-color: bisque;
+}
+#Date{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 10px;
+}
+#Day{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+}
