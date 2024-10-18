@@ -6,7 +6,7 @@ function showTime() {
     let secs = time.getSeconds();
     let millisec=time.getMilliseconds();
     let date = time.getDate();
-    let month = time.getMonth();
+    let month = time.getMonth() +1;
     let year = time.getFullYear();
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let day = days[time.getDay()];
