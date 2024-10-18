@@ -1,3 +1,4 @@
+setInterval(showTime,1000);
 function showTime() {
     let time = new Date();
     let hour = time.getHours();
@@ -11,9 +12,10 @@ function showTime() {
     let day = days[time.getDay()];
     am_pm = "am";
     if (hour > 12) {
+        // hour-=12
         am_pm = "pm";
     }
-    else if (hour = 12) {
+    else if (hour == 12) {
         am_pm = "am";
     }
     hour=(hour<10)?"0"+hour:hour;
@@ -25,14 +27,14 @@ function showTime() {
         min +
         ":" +
         secs+
-        am_pm
+        am_pm;
 
     let curDate =
         date +
         "/" +
         month +
         "/" +
-        year
+        year;
     let curDay =
         day;
     document.getElementById("Clock").innerHTML = curTime;
